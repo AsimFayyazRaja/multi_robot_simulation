@@ -1,0 +1,26 @@
+TrajectoryPlannerROS:
+
+  # Robot Configuration Parameters
+  max_vel_x: 0.18          # Maximum linear velocity in the x direction
+  min_vel_x: 0.08          # Minimum linear velocity in the x direction
+
+  max_vel_theta: 1.0       # Maximum angular velocity
+  min_vel_theta: -1.0      # Minimum angular velocity (negative for reverse rotation)
+  min_in_place_vel_theta: 1.0  # Minimum angular velocity for in-place rotation
+
+  acc_lim_x: 0.5           # Linear acceleration limit in the x direction
+  acc_lim_y: 0.0           # Linear acceleration limit in the y direction (not used for differential drive)
+  acc_lim_theta: 0.25      # Angular acceleration limit
+
+  # Goal Tolerance Parameters
+  xy_goal_tolerance: 0.10  # Allowed position error in meters to consider the goal reached
+  yaw_goal_tolerance: 0.05 # Allowed orientation error in radians to consider the goal reached
+
+  # Differential-drive robot configuration
+  holonomic_robot: false   # Set to true if the robot can move sideways (false for differential drive)
+
+  # Forward Simulation Parameters
+  sim_time: 0.8            # Time to simulate forward in seconds
+  vx_samples: 18           # Number of samples for velocity in x
+  vtheta_samples: 20       # Number of samples for angular velocity
+  sim_granularity: 0.05    # Step size of simulation in meters

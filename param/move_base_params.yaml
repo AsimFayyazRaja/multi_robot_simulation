@@ -1,0 +1,8 @@
+shutdown_costmaps: false      # Do not shutdown costmaps when planner is inactive
+controller_frequency: 10.0    # Frequency of controller execution
+planner_patience: 5.0         # Time to wait in seconds for the planner to find a path
+controller_patience: 15.0     # Time to wait in seconds for the controller to complete a path
+conservative_reset_dist: 1.0  # Distance to clear surrounding obstacles when reset
+planner_frequency: 10.0       # Frequency at which the global planner is executed
+oscillation_timeout: 10.0     # Time to reset the oscillation detector
+oscillation_distance: 0.2     # Distance to move before being considered in oscillation

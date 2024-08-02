@@ -1,0 +1,11 @@
+global_costmap:
+
+  # Frames and transformation tolerances
+  global_frame: map             # The coordinate frame of the map
+  robot_base_frame: Bot1_baselink # The base frame of the robot
+
+  update_frequency: 10.0        # Frequency to update the costmap
+  publish_frequency: 10.0       # Frequency to publish the costmap
+  transform_tolerance: 0.5      # Time to wait for a transform before failing
+
+  static_map: true              # Use a static map

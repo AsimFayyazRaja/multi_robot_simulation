@@ -1,0 +1,20 @@
+obstacle_range: 7          # Maximum distance to consider an obstacle
+raytrace_range: 4          # Maximum range to raytrace for clearing obstacles
+
+# Robot footprint configuration (commented out here)
+# footprint: [[-0.25, -0.1], [-0.25, 0.1], [0.25, 0.1], [0.25, -0.1]]
+# scaling_factors: [0.2, 0.5]
+
+robot_radius: 3.0          # Radius of the robot for collision checking
+
+inflation_radius: 2.0      # Radius around obstacles to inflate for safety
+cost_scaling_factor: 1.0   # Factor to scale the cost of obstacle cells
+
+map_type: costmap          # Type of map being used (costmap)
+observation_sources: scan  # Sensor sources for observation
+scan: 
+  sensor_frame: Bot1_scan_frame  # Frame for the sensor data
+  data_type: LaserScan           # Type of data provided by the sensor
+  topic: Bot1_scan               # ROS topic for the laser scan data
+  marking: true                  # Mark obstacles in the costmap
+  clearing: true                 # Clear obstacles in the costmap
