@@ -24,3 +24,5 @@ source devel/setup.bash
 
 roslaunch xy_simulator navigation.launch map_file:=cappero_map.yaml
 ```
+
+main file must be placed in the "src" folder to make it work.
